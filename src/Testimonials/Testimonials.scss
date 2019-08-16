@@ -1,0 +1,5 @@
+@import "../mixins.scss";
+
+.Testimonials {
+  @include full-page;
+}

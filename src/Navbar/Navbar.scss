@@ -1,0 +1,30 @@
+@import "../mixins.scss";
+@include sticky;
+.Navbar {
+  border-width: 0px 0px 5px 0px;
+  border-style: outset;
+  height: 75px;
+
+  background-color: white;
+}
+
+/* .left-side {
+}
+.hamburger {
+} */
+.page-title {
+  color: $header-text-color;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.phone {
+  color: var($header-text-color);
+  font-weight: 600;
+}
+
+.directions {
+  color: var($header-text-color);
+  font-weight: 600;
+}
