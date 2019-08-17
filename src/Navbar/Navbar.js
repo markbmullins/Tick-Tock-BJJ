@@ -1,20 +1,28 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 
-const Navbar = () => {
+import HamburgerMenu from "react-hamburger-menu";
+
+function Navbar() {
+  const [hamburgerOpen, sethamburgerOpen] = useState(false);
+
   return (
     <div className="Navbar sticky">
-      <div className="left-side">
-        <span className="hamburger">||||||</span>
-        <span className="page-title">Tick-Tock Jui-Jitsu</span>
+      <div className="hamburger">
+        <HamburgerMenu
+          isOpen={hamburgerOpen}
+          menuClicked={() => sethamburgerOpen(!hamburgerOpen)}
+          animationDuration={0.3}
+          width={18}
+          height={23}
+        />
       </div>
+      <div className="page-title">Tick-Tock Jui-Jitsu</div>
 
-      <div className="right-side">
-        <span className="phone">Call Now</span>
-        <span className="directions">Get Directions</span>
-      </div>
+      <div className="phone">Call Now</div>
+      <div className="directions">Get Directions</div>
     </div>
   );
-};
+}
 
 export default Navbar;

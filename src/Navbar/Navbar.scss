@@ -1,30 +1,41 @@
 @import "../mixins.scss";
 @include sticky;
 .Navbar {
-  border-width: 0px 0px 5px 0px;
-  border-style: outset;
-  height: 75px;
-
+  height: 65px;
+  display: inline-flex;
   background-color: white;
+  align-items: center;
 }
 
-/* .left-side {
-}
 .hamburger {
-} */
+  height: 48px;
+  width: 55px;
+}
+
 .page-title {
   color: $header-text-color;
   font-weight: 700;
   font-size: 22px;
   font-family: "Comfortaa", sans-serif;
+  width: 213px;
 }
 
 .phone {
-  color: var($header-text-color);
-  font-weight: 600;
+  color: $header-text-color;
+  font-weight: 400;
+  font-family: "Ledger", serif;
+  height: 30px;
+  font-size: 17px;
+  margin-left: auto;
+  width: 150px;
 }
 
 .directions {
-  color: var($header-text-color);
-  font-weight: 600;
+  color: $header-text-color;
+  font-weight: 400;
+  font-family: "Ledger", serif;
+  height: 30px;
+  font-size: 17px;
+  margin-left: auto;
+  width: 190px;
 }
