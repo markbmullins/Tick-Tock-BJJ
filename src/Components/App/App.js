@@ -12,15 +12,15 @@ import Navbar from "../Navbar/Navbar";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Navbar />
-      </header>
-      <Home />
-      <Updates />
-      <Testimonials />
-      <About />
-      <Gallery />
-      <Contact />
+      <Navbar />
+      <div className="content">
+        <Home />
+        <Updates />
+        <Testimonials />
+        <About />
+        <Gallery />
+        <Contact />
+      </div>
     </div>
   );
 }
