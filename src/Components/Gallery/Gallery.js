@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import "./Gallery.scss";
 
 const Gallery = () => {
-  return <div className="Gallery">Gallery</div>;
+  return (
+    <div className="Gallery" id="Gallery">
+      Gallery
+    </div>
+  );
 };
 
 export default Gallery;
