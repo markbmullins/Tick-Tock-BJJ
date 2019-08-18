@@ -36,6 +36,19 @@
     .right-side {
       margin-left: auto;
       .phone {
+        .phone-logo {
+          float: left;
+          img {
+            width: 17px;
+            height: 17px;
+            margin: auto;
+            margin-right: 10px;
+          }
+        }
+        .phone-link {
+          float: right;
+        }
+
         color: $header-text-color;
         font-weight: 400;
         font-family: "Ledger", serif;
@@ -45,6 +58,18 @@
       }
 
       .directions {
+        .directions-logo {
+          float: left;
+          img {
+            width: 17px;
+            height: 17px;
+            margin: auto;
+            margin-right: 10px;
+          }
+        }
+        .directions-link {
+          float: right;
+        }
         color: $header-text-color;
         font-weight: 400;
         font-family: "Ledger", serif;

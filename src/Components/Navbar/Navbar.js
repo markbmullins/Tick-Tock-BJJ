@@ -55,11 +55,29 @@ function Navbar() {
         </div>
 
         <div className="right-side">
-          <a className="phone" href="tel:843-608-8727">
-            Call Now
-          </a>
-          <div className="directions" onClick={() => mapSelector()}>
-            Get Directions
+          <div>
+            <div className="phone">
+              <div className="phone-link">
+                <a href="tel:843-608-8727">
+                  <div className="phone-logo">
+                    <img
+                      src={process.env.PUBLIC_URL + "/assets/images/phone-icon.svg"}
+                      alt="Call Tick-Tock Jiu-Jitsu"
+                    />
+                  </div>
+                  Call Now
+                </a>
+              </div>
+            </div>
+            <div className="directions" onClick={() => mapSelector()}>
+              <div className="directions-logo">
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/images/directions-icon.svg"}
+                  alt="Directions to Tick-Tock Jiu-Jitsu"
+                />
+              </div>
+              <div className="directions-link">Get Directions</div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.scss";
-import frontPic from "../../Assets/images/ttjj-banner-image.jpg";
 
 const Home = () => {
   return (
@@ -22,7 +21,10 @@ const Home = () => {
           </div>
         </div>
         <div className="banner-image">
-          <img src={frontPic} alt="Tick-Tock Jiu-Jitsu" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/images/ttjj-banner-image.jpg"}
+            alt="Tick-Tock Jiu-Jitsu"
+          />
         </div>
       </div>
     </div>

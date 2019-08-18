@@ -25,10 +25,13 @@
 
       .call-container {
         margin-top: 20px;
+
         .call-link {
           margin: auto;
           font-family: "Ledger", serif;
           background-color: $header-text-color;
+          border-radius: 5px;
+          border: 1px solid $header-text-color;
           font-size: 20px;
           color: white;
           width: 322px;
