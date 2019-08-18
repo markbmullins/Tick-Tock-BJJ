@@ -24,9 +24,9 @@ function Navbar() {
 
   const mapSelector = () => {
     const onIOS =
-      navigator.platform.indexOf("iPhone") != -1 ||
-      navigator.platform.indexOf("iPad") != -1 ||
-      navigator.platform.indexOf("iPod") != -1;
+      navigator.platform.indexOf("iPhone") !== -1 ||
+      navigator.platform.indexOf("iPad") !== -1 ||
+      navigator.platform.indexOf("iPod") !== -1;
 
     const address = "7671 Northwoods Blvd H, North Charleston, SC 29406";
     const link = "://maps.google.com/maps/dir/?q=";
