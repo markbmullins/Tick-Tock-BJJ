@@ -6,7 +6,7 @@ import Contact from "../Contact/Contact";
 import Gallery from "../Gallery/Gallery";
 import Home from "../Home/Home";
 import Testimonials from "../Testimonials/Testimonials";
-import Updates from "../Updates/Updates";
+// import Updates from "../Updates/Updates";
 import Navbar from "../Navbar/Navbar";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <div className="content">
         <Home id="Home" />
-        <Updates id="Updates" />
+        {/* <Updates id="Updates" /> */}
         <Testimonials id="Testimonials" />
         <About id="About" />
         <Gallery id="Gallery" />

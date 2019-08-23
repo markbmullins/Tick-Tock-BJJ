@@ -5,6 +5,7 @@ const Testimonials = () => {
   return (
     <div className="Testimonials" id="Testimonials">
       Testimonials
+      <div id="google-reviews" />
     </div>
   );
 };
