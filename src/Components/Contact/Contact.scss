@@ -1,5 +1,51 @@
 @import "../../mixins.scss";
 
 .Contact {
-  @include full-page;
+  margin: 0 auto;
+  text-align: center;
+  .accent-bar {
+    border: 1px solid black;
+    margin: 0 auto 16px;
+    width: 50px
+  }
+
+  .title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .map {
+    margin: 30px 0 30px 0;
+  }
+  #info {
+    display: flex;
+    justify-content: center;
+    
+    #info-contact {
+      text-align: left;
+      margin: 0 30px 0 30px;
+    }
+    #info-address {
+      text-align: left;
+      margin: 0 30px 0 30px;
+    }
+    #info-hours {
+      text-align: left;
+      margin: 0 30px 0 30px;
+      #info-hours-title {
+
+      }
+      #days-container {
+        display: flex;
+        flex-direction: column;
+        .day {
+          display: flex;
+          .day-name {
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+  }
 }
