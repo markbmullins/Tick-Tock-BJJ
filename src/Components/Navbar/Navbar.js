@@ -1,10 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 
 import HamburgerMenu from "react-hamburger-menu";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hamburgerHeight, setHamburgerHeight] = useState(0);
+  const [hamburgerWidth, setHamburgerWidth] = useState(0);
+
+  const setHamburgerSize = (height, width) => {
+    console.log("called2");
+    console.log("width", width);
+    if (width > 840) {
+      setHamburgerHeight(18);
+      setHamburgerWidth(12);
+    } else if (width > 660) {
+      setHamburgerHeight(11);
+      setHamburgerWidth(8);
+    } else {
+      console.log("here");
+      setHamburgerHeight(10);
+      setHamburgerWidth(7);
+    }
+  };
+
+  const getWindowDimensions = () => {
+    console.log("called");
+    console.log(window.innerWidth);
+    setHamburgerSize(window.innerHeight, window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", getWindowDimensions);
+    getWindowDimensions();
+  });
 
   const toggleMenu = () => {
     if (menuOpen) {
@@ -47,8 +75,8 @@ function Navbar() {
               isOpen={menuOpen}
               menuClicked={() => toggleMenu()}
               animationDuration={0.3}
-              width={18}
-              height={12}
+              width={hamburgerHeight}
+              height={hamburgerWidth}
             />
           </div>
           <div className="page-title">Tick-Tock Jiu-Jitsu</div>

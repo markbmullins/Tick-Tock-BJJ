@@ -12,20 +12,19 @@
   .title {
     font-family: "Comfortaa", sans-serif;
     font-weight: 400;
-    font-size: 1.250em;
+    font-size: 1.25em;
   }
 
   .map {
-    margin: 1.875em 0 1.875em 0;
-    height: 43.750em;
-    width: 59.375em;
-    align-content: center;
-    justify-content: center;
+    margin: 1.875em auto 1.875em auto;
+    display: block;
+    width: 100%;
+    height: 43.75em;
   }
   #info {
     display: flex;
     justify-content: center;
-    
+
     #info-contact {
       text-align: left;
       margin: 0 1.875em 0 1.875em;
@@ -38,7 +37,6 @@
       text-align: left;
       margin: 0 1.875em 0 1.875em;
       #info-hours-title {
-
       }
       #days-container {
         display: flex;
