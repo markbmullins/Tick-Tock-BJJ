@@ -17,20 +17,24 @@
     height: 100%;
 
     .left-side {
+      display: flex;
+      justify-content: center;
+      align-content: center;
       .hamburger {
-        float: left;
-        position: relative;
-        top: 4px;
+        margin-right: 1em;
+        @media all and (min-width: 320px) {
+          margin: auto 1em auto 0;
+        }
       }
 
       .page-title {
+        text-align: center;
         color: $header-text-color;
         font-weight: 600;
         font-size: 1.375em;
         font-family: "Comfortaa", sans-serif;
-        float: right;
-        margin-left: 1.25em;
-        margin-top: auto;
+        height: 100%;
+        margin: auto 0 auto 0;
       }
     }
 
