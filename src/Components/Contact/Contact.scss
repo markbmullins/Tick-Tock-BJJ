@@ -5,18 +5,22 @@
   text-align: center;
   .accent-bar {
     border: 1px solid black;
-    margin: 0 auto 16px;
-    width: 50px
+    margin: 0 auto 1em;
+    width: 3.125em;
   }
 
   .title {
     font-family: "Comfortaa", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.250em;
   }
 
   .map {
-    margin: 30px 0 30px 0;
+    margin: 1.875em 0 1.875em 0;
+    height: 43.750em;
+    width: 59.375em;
+    align-content: center;
+    justify-content: center;
   }
   #info {
     display: flex;
@@ -24,15 +28,15 @@
     
     #info-contact {
       text-align: left;
-      margin: 0 30px 0 30px;
+      margin: 0 1.875em 0 1.875em;
     }
     #info-address {
       text-align: left;
-      margin: 0 30px 0 30px;
+      margin: 0 1.875em 0 1.875em;
     }
     #info-hours {
       text-align: left;
-      margin: 0 30px 0 30px;
+      margin: 0 1.875em 0 1.875em;
       #info-hours-title {
 
       }
@@ -42,7 +46,7 @@
         .day {
           display: flex;
           .day-name {
-            margin-right: 7px;
+            margin-right: 0.438em;
           }
         }
       }

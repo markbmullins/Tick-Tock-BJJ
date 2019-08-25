@@ -11,7 +11,7 @@ function Navbar() {
       document.getElementById("menu").style.width = "0px";
       setMenuOpen(false);
     } else {
-      document.getElementById("menu").style.width = "325px";
+      document.getElementById("menu").style.width = "20.313em";
       setMenuOpen(true);
     }
   };

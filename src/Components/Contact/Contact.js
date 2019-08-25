@@ -12,8 +12,8 @@ const Contact = () => {
         <iframe
           title="map"
           src={url}
-          width="950"
-          height="700"
+          width="100%"
+          height="100%"
           frameborder="0"
           style={{ border: '0' }}
           allowfullscreen=""
@@ -46,36 +46,36 @@ const Contact = () => {
           <div>
             <div id="days-container">
               <div className="day">
-                <div className="day-name">Mon:</div>
+                <div className="day-name">Mon: </div>
                 <div  className="hours1">10:00 AM – 1:00 PM, </div>
                 <div className="hours2">6:00 – 8:30 PM</div>
               </div>
               <div className="day">
-                <div className="day-name">Tue:</div>
+                <div className="day-name">Tue: </div>
                 <div className="hours1">10:00 AM – 1:00 PM, </div>
                 <div className="hours2">5:00 – 8:00 PM</div>
               </div>
               <div className="day">
-                <div className="day-name">Wed:</div>
+                <div className="day-name">Wed: </div>
                 <div className="hours1">10:00 AM – 1:00 PM, </div>
                 <div className="hours2">5:00 – 8:00 PM</div>
               </div>
               <div className="day">
-                <div className="day-name">Thu:</div>
+                <div className="day-name">Thu: </div>
                 <div className="hours1">10:00 AM – 1:00 PM, </div>
                 <div className="hours2">5:00 – 8:00 PM</div>
               </div>
               <div className="day">
-                <div className="day-name">Fri:</div>
+                <div className="day-name">Fri: </div>
                 <div className="hours1">10:00 AM – 12:00 PM, </div>
-                <div className="hours2">6:00 – 8:00 PM</div>
+                <div>6:00 – 8:00 PM</div>
               </div>
               <div className="day">
-                <div className="day-name">Sat:</div>
+                <div className="day-name">Sat: </div>
                 <div className="hours1">10:00 AM – 1:00 PM</div>
               </div>
               <div className="day">
-                <div className="day-name">Sun:</div>
+                <div className="day-name">Sun: </div>
                 <div className="hours1">10:00 – 11:00 AM</div>
               </div>
             </div>

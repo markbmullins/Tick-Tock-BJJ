@@ -1,5 +1,5 @@
-import React from "react";
-import "./Home.scss";
+import React from 'react';
+import './Home.scss';
 
 const Home = () => {
   return (
@@ -14,15 +14,17 @@ const Home = () => {
           </div>
           <div className="call-container">
             <div className="call-link">
-              <a className="call-text" href="tel:843-608-8727">
-                CALL (843) 608-8727
-              </a>
+              <div className="call-text">
+                <a href="tel:843-608-8727">CALL (843) 608-8727</a>
+              </div>
             </div>
           </div>
         </div>
         <div className="banner-image">
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/ttjj-banner-image.jpg"}
+            src={
+              process.env.PUBLIC_URL + '/assets/images/ttjj-banner-image.jpg'
+            }
             alt="Tick-Tock Jiu-Jitsu"
           />
         </div>

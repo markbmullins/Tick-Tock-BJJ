@@ -15,8 +15,9 @@
       .title {
         color: $header-text-color;
         font-family: "Comfortaa", sans-serif;
-        font-size: 61px;
+        font-size: 3.813em;
         font-weight: 600;
+        margin:auto;
       }
       .subtitle {
         font-family: "Ledger", serif;
@@ -24,21 +25,22 @@
       }
 
       .call-container {
-        margin-top: 20px;
+        margin-top: 1.250em;
 
         .call-link {
-          margin: auto;
           font-family: "Ledger", serif;
           background-color: $header-text-color;
-          border-radius: 5px;
+          border-radius: 0.313em;
           border: 1px solid $header-text-color;
-          font-size: 20px;
+          font-size: 1.250em;
           color: white;
-          width: 322px;
-          height: 70px;
+          width: 16.1em;
+          height: 3em;
+          margin: auto;
           .call-text {
             position: relative;
-            top: 20px;
+            top: 50%;
+            transform: translateY(-50%);
           }
         }
       }
@@ -46,12 +48,12 @@
 
     .banner-image {
       position: relative;
-      margin-top: 30px;
+      margin-top: 1.875em;
       margin-left: auto;
       margin-right: auto;
-      bottom: 10px;
-      height: 700px;
-      width: 950px;
+      bottom: 0.625em;
+      height: 100%;
+      width: 53%;
       img {
         max-width: 100%;
         max-height: 100%;

@@ -1,6 +1,6 @@
 @import "../../mixins.scss";
 .Navbar {
-  height: 65px;
+  height: 4.063rem;
   width: 100%;
   box-sizing: border-box;
   padding: 0px 66px;
@@ -26,10 +26,10 @@
       .page-title {
         color: $header-text-color;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 1.375em;
         font-family: "Comfortaa", sans-serif;
         float: right;
-        margin-left: 20px;
+        margin-left: 1.25rem;
       }
     }
 
@@ -39,8 +39,8 @@
         .phone-logo {
           float: left;
           img {
-            width: 17px;
-            height: 17px;
+            width: 1.063rem;
+            height: 1.063rem;
             margin: auto;
             margin-right: 10px;
             margin-top: 3px;
@@ -53,19 +53,19 @@
         color: $header-text-color;
         font-weight: 400;
         font-family: "Ledger", serif;
-        font-size: 17px;
+        font-size: 1.063em;
         float: left;
-        margin: 0px 20px;
+        margin: 0px 1.25rem;
       }
 
       .directions {
         .directions-logo {
           float: left;
           img {
-            width: 17px;
-            height: 17px;
+            width: 1.063rem;
+            height: 1.063rem;
             margin: auto;
-            margin-right: 10px;
+            margin-right: 0.625rem;
             margin-top: 3px;
           }
         }
@@ -75,9 +75,9 @@
         color: $header-text-color;
         font-weight: 400;
         font-family: "Ledger", serif;
-        font-size: 17px;
+        font-size: 1.063rem;
         float: right;
-        margin: 0px 20px;
+        margin: 0px 1.250rem;
       }
     }
   }
@@ -87,20 +87,20 @@
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 67px; /* Stay at the top */
+    top: 4.188rem; /* Stay at the top */
     left: 0;
     background-color: white; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 3.75rem; /* Place content 60px from the top */
     transition: 0.15s; /* 0.5 second transition effect to slide in the sidenav */
     box-shadow: 0px 5px 5px grey;
     .flex-container {
       display: flex;
       flex-direction: column;
       .nav-item {
-        margin-top: 28px;
+        margin-top: 1.75rem;
         font-family: "Ledger", serif;
-        font-size: 21px;
+        font-size: 1.313rem;
       }
     }
   }
