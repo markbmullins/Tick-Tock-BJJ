@@ -1,12 +1,11 @@
-import React from 'react';
-import './Home.scss';
+import React from "react";
+import "./Home.scss";
 
 const Home = () => {
   return (
     <div className="Home" id="Home">
       <div className="flex-container">
         <div className="top-half">
-          <div id="anchor" />
           <div className="title">Tick-Tock Jiu-Jitsu</div>
           <div className="subtitle">
             <div>Martial Arts School in North Charleston</div>
@@ -22,9 +21,7 @@ const Home = () => {
         </div>
         <div className="banner-image">
           <img
-            src={
-              process.env.PUBLIC_URL + '/assets/images/ttjj-banner-image.jpg'
-            }
+            src={process.env.PUBLIC_URL + "/assets/images/ttjj-banner-image.jpg"}
             alt="Tick-Tock Jiu-Jitsu"
           />
         </div>

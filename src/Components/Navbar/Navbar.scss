@@ -23,18 +23,16 @@
       .hamburger {
         margin-right: 1em;
         @media all and (min-width: 320px) {
-          margin: auto 1em auto 0;
+          margin: auto 2em auto 0;
         }
       }
 
       .page-title {
-        text-align: center;
+        margin-top: 1px;
         color: $header-text-color;
         font-weight: 600;
         font-size: 1.375em;
         font-family: "Comfortaa", sans-serif;
-        height: 100%;
-        margin: auto 0 auto 0;
       }
     }
 

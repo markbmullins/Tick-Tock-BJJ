@@ -12,6 +12,7 @@ import Navbar from "../Navbar/Navbar";
 function App() {
   return (
     <div className="App">
+      <div id="top-anchor" />
       <Navbar />
       <div className="content">
         <Home id="Home" />

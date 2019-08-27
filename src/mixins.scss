@@ -14,3 +14,17 @@
   font-size: $header-font-size;
   color: $header-text-color;
 }
+
+@mixin center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin button {
+  font-family: "Ledger", serif;
+  background-color: $header-text-color;
+  border-radius: 0.2em;
+  border: 1px solid $header-text-color;
+  color: white;
+}

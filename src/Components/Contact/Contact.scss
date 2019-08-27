@@ -1,6 +1,11 @@
 @import "../../mixins.scss";
 
+$info-collapse-breakpoint: 1000px;
 .Contact {
+  #contact-anchor {
+    position: relative;
+    top: -6.25em;
+  }
   margin: 0 auto;
   text-align: center;
   .accent-bar {
@@ -28,26 +33,80 @@
     #info-contact {
       text-align: left;
       margin: 0 1.875em 0 1.875em;
+      #info-contact-title {
+        font-weight: bold;
+      }
+      #phone-link {
+        margin: 1.5em 0 1.5em 0;
+        @include button;
+        padding: 18px 54px;
+        white-space: nowrap;
+        text-align: center;
+        a {
+          height: 100%;
+          width: 100%;
+        }
+        @media all and (max-width: $info-collapse-breakpoint) {
+          margin: 0.75em 0 0.75em 0;
+        }
+      }
+      @media all and (max-width: $info-collapse-breakpoint) {
+        margin: 1em 0 0 0;
+      }
     }
     #info-address {
       text-align: left;
       margin: 0 1.875em 0 1.875em;
+      #info-address-title {
+        font-weight: bold;
+      }
+      #info-address-directions {
+        margin: 1.5em 0 1.5em 0;
+        @include button;
+        padding: 18px 54px;
+        white-space: nowrap;
+        text-align: center;
+        @media all and (max-width: $info-collapse-breakpoint) {
+          margin: 0.75em 0 0.75em 0;
+        }
+      }
+      #text-address {
+        white-space: nowrap;
+      }
+      @media all and (max-width: $info-collapse-breakpoint) {
+        margin: 1em 0 0 0;
+      }
     }
     #info-hours {
       text-align: left;
       margin: 0 1.875em 0 1.875em;
       #info-hours-title {
+        font-weight: bold;
       }
       #days-container {
+        margin: 1.5em 0 1.5em 0;
         display: flex;
         flex-direction: column;
         .day {
           display: flex;
+          font-family: "Ledger", serif;
+          margin-top: 0.08em;
+          span {
+            margin-right: 0.75em;
+            white-space: pre;
+          }
           .day-name {
             margin-right: 0.438em;
           }
         }
       }
+      @media all and (max-width: $info-collapse-breakpoint) {
+        margin: 1em 0 0 0;
+      }
+    }
+    @media all and (max-width: $info-collapse-breakpoint) {
+      flex-direction: column;
+      width: 17em;
     }
   }
 }

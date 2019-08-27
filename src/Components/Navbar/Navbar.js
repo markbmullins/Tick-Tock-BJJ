@@ -45,6 +45,7 @@ function Navbar() {
   };
 
   const scrollIntoView = id => {
+    toggleMenu();
     const el = document.getElementById(id);
     el.scrollIntoView(true);
     document.getElementById(id).scrollTop += 50;
@@ -111,10 +112,10 @@ function Navbar() {
       </div>
       <div id="menu">
         <div className="flex-container">
-          <div className="nav-item" onClick={() => scrollIntoView("anchor")}>
+          <div className="nav-item" onClick={() => scrollIntoView("top-anchor")}>
             Home
           </div>
-          <div className="nav-item" onClick={() => scrollIntoView("Updates")}>
+          {/* <div className="nav-item" onClick={() => scrollIntoView("Updates")}>
             Updates
           </div>
           <div className="nav-item" onClick={() => scrollIntoView("Testimonials")}>
@@ -122,8 +123,8 @@ function Navbar() {
           </div>
           <div className="nav-item" onClick={() => scrollIntoView("Gallery")}>
             Gallery
-          </div>
-          <div className="nav-item" onClick={() => scrollIntoView("Contact")}>
+          </div> */}
+          <div className="nav-item" onClick={() => scrollIntoView("contact-anchor")}>
             Contact
           </div>
         </div>
