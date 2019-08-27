@@ -14,10 +14,29 @@
         font-size: 3.813em;
         font-weight: 600;
         margin: auto;
+        white-space: nowrap;
+        @media all and (max-width: $breakpoint-1) {
+          font-size: 2.5em;
+        }
+        @media all and (max-width: $breakpoint-2) {
+          font-size: 2em;
+        }
+        @media all and (max-width: $breakpoint-3) {
+          font-size: 1.75em;
+        }
       }
       .subtitle {
         font-family: "Ledger", serif;
         color: #303134;
+        @media all and (max-width: $breakpoint-1) {
+          font-size: 0.8em;
+        }
+        @media all and (max-width: $breakpoint-2) {
+          font-size: 0.75em;
+        }
+        @media all and (max-width: $breakpoint-3) {
+          font-size: 0.6em;
+        }
       }
 
       .call-container {
@@ -31,6 +50,12 @@
           margin: auto;
           .call-text {
             @include center;
+          }
+          @media all and (max-width: $breakpoint-1) {
+            font-size: 0.9em;
+          }
+          @media all and (max-width: $breakpoint-2) {
+            font-size: 0.75em;
           }
         }
       }
