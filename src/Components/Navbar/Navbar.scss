@@ -34,6 +34,21 @@
         font-size: 1.375em;
         font-family: "Comfortaa", sans-serif;
         white-space: nowrap;
+        @media all and (max-width: $breakpoint-0) {
+          font-size: 1.275em;
+        }
+        @media all and (max-width: $breakpoint-1) {
+          font-size: 1.175em;
+        }
+        @media all and (max-width: $breakpoint-2) {
+          font-size: 1.075em;
+        }
+        @media all and (max-width: $breakpoint-3) {
+          font-size: 0.975em;
+        }
+        @media all and (max-width: $breakpoint-4) {
+          font-size: 0.875em;
+        }
       }
     }
 
