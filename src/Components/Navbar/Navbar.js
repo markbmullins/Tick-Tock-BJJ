@@ -3,7 +3,7 @@ import "./Navbar.scss";
 
 import HamburgerMenu from "react-hamburger-menu";
 
-function Navbar() {
+function Navbar({pageTitle}) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hamburgerHeight, setHamburgerHeight] = useState(0);
   const [hamburgerWidth, setHamburgerWidth] = useState(0);
@@ -80,7 +80,8 @@ function Navbar() {
               height={hamburgerWidth}
             />
           </div>
-          <div className="page-title">Tick-Tock Jiu-Jitsu</div>
+          <div><h2 className="page-title">{pageTitle}</h2></div>
+          
         </div>
 
         <div className="right-side">

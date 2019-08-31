@@ -1,9 +1,14 @@
-$header-text-color: #48487f;
+
 
 $header-font-size: calc(10px + 2vmin);
 
 // Dark theme:
 $background-dark: #282c34;
+
+// Light theme
+$accent-color: #48487f;
+$background-color: #FFF;
+$button-text-color: #FFF;
 
 $breakpoint-0: 1000px;
 $breakpoint-1: 775px;

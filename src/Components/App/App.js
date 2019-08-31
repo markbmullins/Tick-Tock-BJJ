@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <div id="top-anchor" />
-      <Navbar />
+      <Navbar pageTitle="Tick-Tock Jiu-Jitsu"/>
       <div className="content">
         <Home id="Home" />
         {/* <Updates id="Updates" /> */}
