@@ -3,7 +3,7 @@
 #flex-container {
   width: 100%;
   #title {
-    font-size: 3.7vw;
+    font-size: calc(1.5em + 3vw);
     font-weight: 600;
     color: $accent-color;
     font-family: 'Comfortaa', sans-serif;
@@ -19,13 +19,16 @@
     margin-top: 1.25rem;
     a {
       font-family: 'Ledger', serif;
-      font-size: calc(.2em + .9vw);
+      font-size: calc(.7em + .5vw);
     }
   }
 
   #banner-image {
     margin: 1rem auto 0 auto;
     width: 65%;
+    @media all and (max-width: $breakpoint-5) {
+      width: 90%;
+    }
 
     img {
       max-width: 100%;

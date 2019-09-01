@@ -9,7 +9,7 @@ const Info = () => {
     <div id="info">
       <div id="info-contact">
         <div id="info-contact-title">Contact</div>
-        <Button width="22vh">
+        <Button width="19 vw">
             <a id="phone-link" href="tel:843-608-8727">Call Now</a>
         </Button>
         <div>(843) 608-8727</div>

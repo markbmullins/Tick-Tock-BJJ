@@ -20,7 +20,7 @@ const DirectionButton = props => {
   };
   return (
     <div id="DirectionButton" onClick={() => mapSelector()}>
-      <Button width={props.width || "22vh"}>
+      <Button width={props.width || "19 vw"}>
         <div id="button-text">Get Directions</div>
       </Button>
     </div>

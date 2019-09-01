@@ -5,4 +5,8 @@
     background-color: $background-color;
     min-height: 100vh; 
     width: 100%;
+
+    @media all and (max-width: $breakpoint-5) {
+        min-height: 50vh; 
+    }
 }
