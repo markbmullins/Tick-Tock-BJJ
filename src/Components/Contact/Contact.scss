@@ -6,6 +6,10 @@
 }
 
 #contact-header {
+  margin-top: 5rem;
+  @media all and (max-width: $breakpoint-5) {
+    margin-top: 0rem;
+  }
   height: 5%;
   #accent-bar {
     border: 1px solid black;
