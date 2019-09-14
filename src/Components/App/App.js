@@ -8,6 +8,7 @@ import Home from "../Home/Home";
 // import Testimonials from "../Testimonials/Testimonials";
 // import Updates from "../Updates/Updates";
 import Navbar from "../Navbar/Navbar";
+import Links from "../Links/Links";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         {/* <Testimonials id="Testimonials" /> */}
         {/* <About id="About" /> */}
         {/* <Gallery id="Gallery" /> */}
+        <Links id="Links" />
         <Contact id="Contact" />
       </div>
     </div>
