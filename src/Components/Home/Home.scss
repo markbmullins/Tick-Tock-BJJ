@@ -1,91 +1,38 @@
-@import "../../mixins.scss";
+@import '../../mixins.scss';
 
-.Home {
-  text-align: center;
-  background-color: white;
-  min-height: 100vh;
+#flex-container {
+  width: 100%;
+  #title {
+    font-size: calc(1.5em + 3vw);
+    font-weight: 600;
+    color: $accent-color;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 3rem 0 0 0;
+  }
+  #subtitle {
+    font-family: 'Ledger', serif;
+    color: #303134;
+    margin: 1rem 0 1rem 0;
+  }
 
-  .flex-container {
-    .top-half {
-      margin: auto;
-      .title {
-        color: $header-text-color;
-        font-family: "Comfortaa", sans-serif;
-        font-size: 3.813em;
-        font-weight: 600;
-        margin: auto;
-        white-space: nowrap;
-        @media all and (max-width: $breakpoint-1) {
-          font-size: 2.5em;
-        }
-        @media all and (max-width: $breakpoint-2) {
-          font-size: 2em;
-        }
-        @media all and (max-width: $breakpoint-3) {
-          font-size: 1.75em;
-        }
-      }
-      .subtitle {
-        font-family: "Ledger", serif;
-        color: #303134;
-        @media all and (max-width: $breakpoint-1) {
-          font-size: 0.8em;
-        }
-        @media all and (max-width: $breakpoint-2) {
-          font-size: 0.75em;
-        }
-        @media all and (max-width: $breakpoint-3) {
-          font-size: 0.6em;
-        }
-      }
+  #call-button {
+    margin-top: 1.25rem;
+    a {
+      font-family: 'Ledger', serif;
+      font-size: calc(.7em + .5vw);
+    }
+  }
 
-      .call-container {
-        margin-top: 1.25em;
-
-        .call-link {
-          @include button;
-          font-size: 1.25em;
-          width: 16.1em;
-          height: 3em;
-          margin: auto;
-          .call-text {
-            @include center;
-          }
-          @media all and (max-width: $breakpoint-1) {
-            font-size: 0.9em;
-          }
-          @media all and (max-width: $breakpoint-2) {
-            font-size: 0.75em;
-          }
-        }
-      }
+  #banner-image {
+    margin: 1rem auto 0 auto;
+    width: 65%;
+    @media all and (max-width: $breakpoint-5) {
+      width: 90%;
     }
 
-    .banner-image {
-      position: relative;
-      margin-top: 1.875em;
-      margin-left: auto;
-      margin-right: auto;
-      bottom: 0.625em;
-      height: 100%;
-      width: 59%;
-      @media all and (max-width: 1380px) {
-        width: 70%;
-      }
-      @media all and (max-width: 1050px) {
-        width: 80%;
-      }
-      @media all and (max-width: 750px) {
-        width: 90%;
-      }
-      @media all and (max-width: 450px) {
-        width: 100%;
-      }
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        // object-fit: contain;
-      }
+    img {
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 }

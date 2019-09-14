@@ -1,32 +1,32 @@
-import React from "react";
-import "./Home.scss";
+import React from 'react';
+import './Home.scss';
+import Section from '../Section/Section';
+import Button from '../Button/Button';
 
-const Home = () => {
+const Home = ({ title, subtitle }) => {
   return (
-    <div className="Home" id="Home">
-      <div className="flex-container">
-        <div className="top-half">
-          <div className="title">Tick-Tock Jiu-Jitsu</div>
-          <div className="subtitle">
+    <Section>
+      <div id="flex-container">
+          <div id="title">Tick-Tock Jiu-Jitsu</div>
+          <div id="subtitle">
             <div>Martial Arts School in North Charleston</div>
-            <div>Opening at 10:00 AM tomorrow</div>
+            <div>Opening at 10:00 AM</div>
           </div>
-          <div className="call-container">
-            <div className="call-link">
-              <div className="call-text">
+          <div id="call-button">
+            <Button>
                 <a href="tel:843-608-8727">CALL (843) 608-8727</a>
-              </div>
-            </div>
+            </Button>
           </div>
-        </div>
-        <div className="banner-image">
+        <div id="banner-image">
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/ttjj-banner-image.jpg"}
+            src={
+              process.env.PUBLIC_URL + '/assets/images/ttjj-banner-image.jpg'
+            }
             alt="Tick-Tock Jiu-Jitsu"
           />
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 

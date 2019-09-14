@@ -1,10 +1,10 @@
 @import "../../mixins.scss";
 .Navbar {
-  height: 4.063em;
+  height: 4.063rem;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 4.125em;
-  background-color: white;
+  padding: 0 4.125rem;
+  background-color: $background-color;
   position: fixed;
   top: 0;
   box-shadow: 0 0 5px grey;
@@ -18,37 +18,16 @@
 
     .left-side {
       display: flex;
-      justify-content: center;
-      align-content: center;
       .hamburger {
-        margin-right: 1em;
+        margin-right: 1rem;
         @media all and (min-width: 320px) {
           margin: auto 2em auto 0;
         }
       }
 
-      .page-title {
-        margin-top: 1px;
-        color: $header-text-color;
-        font-weight: 600;
-        font-size: 1.375em;
+      .page-title { 
+        color: $accent-color;
         font-family: "Comfortaa", sans-serif;
-        white-space: nowrap;
-        @media all and (max-width: $breakpoint-0) {
-          font-size: 1.275em;
-        }
-        @media all and (max-width: $breakpoint-1) {
-          font-size: 1.175em;
-        }
-        @media all and (max-width: $breakpoint-2) {
-          font-size: 1.075em;
-        }
-        @media all and (max-width: $breakpoint-3) {
-          font-size: 0.975em;
-        }
-        @media all and (max-width: $breakpoint-4) {
-          font-size: 0.875em;
-        }
       }
     }
 
@@ -58,8 +37,8 @@
         .phone-logo {
           float: left;
           img {
-            width: 1.063em;
-            height: 1.063em;
+            width: 1.063rem;
+            height: 1.063rem;
             margin: auto;
             margin-right: 10px;
             margin-top: 3px;
@@ -69,34 +48,31 @@
           float: right;
         }
 
-        color: $header-text-color;
-        font-weight: 400;
+        color: $accent-color;
         font-family: "Ledger", serif;
-        font-size: 1.063em;
         float: left;
-        margin: 0px 1.25em;
+        margin: 0px 1.25rem;
       }
 
       .directions {
+        color: $accent-color;
+        font-family: "Ledger", serif;
+        float: right;
+        margin: 0px 1.25rem;
         .directions-logo {
           float: left;
           img {
-            width: 1.063em;
-            height: 1.063em;
+            width: 1.063rem;
+            height: 1.063rem;
             margin: auto;
-            margin-right: 0.625em;
+            margin-right: 0.625rem;
             margin-top: 3px;
           }
         }
         .directions-link {
           float: right;
         }
-        color: $header-text-color;
-        font-weight: 400;
-        font-family: "Ledger", serif;
-        font-size: 1.063em;
-        float: right;
-        margin: 0px 1.25em;
+       
       }
       @media all and (max-width: 775px) {
         display: none;
@@ -109,20 +85,20 @@
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 4.188em; /* Stay at the top */
+    top: 4.188rem; /* Stay at the top */
     left: 0;
-    background-color: white; /* Black*/
+    background-color: $background-color; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 3.75em; /* Place content 60px from the top */
+    padding-top: 3.75rem; /* Place content 60px from the top */
     transition: 0.15s; /* 0.5 second transition effect to slide in the sidenav */
     box-shadow: 0px 5px 5px grey;
     .flex-container {
       display: flex;
       flex-direction: column;
       .nav-item {
-        margin-top: 1.75em;
+        margin-top: 1.75rem;
         font-family: "Ledger", serif;
-        font-size: 1.313em;
+        font-size: 1.313rem;
       }
     }
   }
