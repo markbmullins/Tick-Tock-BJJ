@@ -5,7 +5,10 @@
   width: 70%;
   margin: auto;
   padding: 2vw;
-  height: 40vh;
+  height: calc(100px + 22vh);
+  @include phone-below {
+    height: calc(50px + 18vh);
+  }
 }
 
 .title {
@@ -13,7 +16,7 @@
   font-weight: 400;
   font-size: 1.25em;
   text-align: center;
-  margin-bottom: 1vh;
+  margin-bottom: calc(10px + 1vh);
 }
 
 #links-container {

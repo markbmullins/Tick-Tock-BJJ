@@ -1,6 +1,9 @@
 @import "vars.scss";
 
-@mixin sticky {
+@mixin phone-below {
+  @media (max-width: 475px) {
+    @content;
+  }
 }
 
 @mixin full-page {
