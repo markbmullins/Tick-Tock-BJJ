@@ -1,0 +1,97 @@
+@import "../../mixins.scss";
+$button-width: 40px;
+$line-width: $button-width / (8/5);
+$line-height: $button-width / (80/6);
+$after-translate: $button-width / 5;
+$before-translate: $after-translate * -1;
+$transform: $line-width * -1;
+$secondary-transform: $button-width / (80/35);
+$secondary-transform-negative: $secondary-transform * -1;
+$hamburger-color: #272727;
+@mixin transition {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin hamburger-line {
+  width: $line-width;
+  height: $line-height;
+  @include phone-below {
+    width: $line-width/1.5;
+    height: $line-height/1.5;
+  }
+  background: $hamburger-color;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rbga(255, 101, 47, 0.2);
+  @include transition;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burger-container {
+  @include flex-center;
+}
+
+.menu-btn {
+  position: relative;
+  @include flex-center;
+  width: $button-width;
+  height: $button-width;
+  @include phone-below {
+    width: $button-width/2;
+    height: $button-width/2;
+  }
+  cursor: pointer;
+  @include transition;
+}
+
+.menu-btn-burger {
+  @include hamburger-line;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  @include hamburger-line;
+}
+
+.menu-btn-burger::before {
+  transform: translateY($before-translate);
+  @include phone-below {
+    transform: translateY($before-translate/2);
+  }
+}
+
+.menu-btn-burger::after {
+  transform: translateY($after-translate);
+  @include phone-below {
+    transform: translateY($after-translate/2);
+  }
+}
+
+/* Animation */
+.menu-btn.open .menu-btn-burger {
+  transform: translateX($transform); // Middle line animation
+  @include phone-below {
+    transform: translateX($transform/2);
+  }
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg) translate($secondary-transform, $secondary-transform-negative);
+  @include phone-below {
+    transform: rotate(45deg) translate($secondary-transform/2, $secondary-transform-negative/2);
+  }
+}
+
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate($secondary-transform, $secondary-transform);
+  @include phone-below {
+    transform: rotate(-45deg) translate($secondary-transform/2, $secondary-transform/2);
+  }
+}

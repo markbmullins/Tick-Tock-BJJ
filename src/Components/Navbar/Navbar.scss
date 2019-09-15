@@ -21,11 +21,11 @@
       .hamburger {
         margin-right: 1rem;
         @media all and (min-width: 320px) {
-          margin: auto 2em auto 0;
+          margin: auto 0.75em auto 0;
         }
       }
 
-      .page-title { 
+      .page-title {
         color: $accent-color;
         font-family: "Comfortaa", sans-serif;
       }
@@ -72,7 +72,6 @@
         .directions-link {
           float: right;
         }
-       
       }
       @media all and (max-width: 775px) {
         display: none;
