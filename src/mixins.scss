@@ -1,4 +1,4 @@
-@import "vars.scss";
+@import 'vars.scss';
 
 @mixin phone-below {
   @media (max-width: 475px) {
@@ -30,4 +30,17 @@
   border-radius: 0.2em;
   border: 1px solid $accent-color;
   color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.full-height-width {
+  height: 100%;
+  width: 100%;
 }

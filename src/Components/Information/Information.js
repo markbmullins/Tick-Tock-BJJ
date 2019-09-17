@@ -4,25 +4,25 @@ import DirectionButton from '../DirectionButton/DirectionButton';
 import Button from '../Button/Button';
 
 const contact = (
-  <div id="info-contact">
+  <div className="info-column">
     <div className="bold">Contact</div>
     <div id="phone-button">
-    <Button width="19 vw">
-      <a id="phone-link" href="tel:843-608-8727">
-        Call Now
-      </a>
-    </Button>
+      <Button width="19 vw">
+        <a className="full-height-width" href="tel:843-608-8727">
+          Call Now
+        </a>
+      </Button>
     </div>
     <div>(843) 608-8727</div>
   </div>
 );
 
 const directions = (
-  <div id="info-address">
+  <div className="info-column">
     <div className="bold">Address</div>
     <DirectionButton />
 
-    <div id="text-address">
+    <div className="nowrap">
       <div>7671 Northwoods Blvd Unit H</div>
       <div>North Charleston, SC 29406</div>
       <div>United States</div>
@@ -42,7 +42,7 @@ const buildDay = (day, hours) => {
 };
 
 const hours = (
-  <div id="info-hours">
+  <div className="info-column">
     <div className="bold">Business Hours</div>
     <div>
       <div id="days-container">

@@ -1,7 +1,4 @@
 @import '../../mixins.scss';
-.bold {
-    font-weight: bold;
-}
 
 #info {
   display: flex;
@@ -12,48 +9,18 @@
   }
 }
 
-#info-contact {
+.info-column {
   text-align: left;
   margin: 0 1.875em 0 1.875em;
   @media all and (max-width: $breakpoint-1) {
     margin: 1em 0 0 0;
   }
-}
-#phone-link {
-  height: 100%;
-  width: 100%;
 }
 
 #phone-button {
   margin: 1.5em 0 1.5em 0;
 }
 
-#info-address {
-  text-align: left;
-  margin: 0 1.875em 0 1.875em;
-  @media all and (max-width: $breakpoint-1) {
-    margin: 1em 0 0 0;
-  }
-}
-#info-address-title {
-  font-weight: bold;
-}
-
-#text-address {
-  white-space: nowrap;
-}
-
-#info-hours {
-  text-align: left;
-  margin: 0 1.875em 0 1.875em;
-  @media all and (max-width: $breakpoint-1) {
-    margin: 1em 0 0 0;
-  }
-}
-
-#info-hours-title {
-  font-weight: bold;
-}
 #days-container {
   margin: 1.5em 0 1.5em 0;
   display: flex;
