@@ -3,13 +3,15 @@ import './Navbar.scss';
 import Sidebar from '../Sidebar/Sidebar';
 import NavBarChildren from '../NavBarChildren/NavBarChildren';
 
-function Navbar({ menuOpen, toggleMenu }) {
+function Navbar({ pageTitle, menuOpen, toggleMenu }) {
   return (
     <div className="Navbar">
-      <NavBarChildren toggleMenu={toggleMenu} menuOpen={menuOpen} />
-      <div id="menu">
-        <Sidebar toggleMenu={toggleMenu} menuOpen={menuOpen} />
-      </div>
+      <NavBarChildren
+        toggleMenu={toggleMenu}
+        menuOpen={menuOpen}
+        pageTitle={pageTitle}
+      />
+      <Sidebar toggleMenu={toggleMenu} menuOpen={menuOpen} />
     </div>
   );
 }

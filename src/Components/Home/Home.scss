@@ -2,37 +2,40 @@
 
 #flex-container {
   width: 100%;
-  #title {
-    font-size: calc(1.5em + 3vw);
-    font-weight: 600;
-    color: $accent-color;
-    font-family: 'Comfortaa', sans-serif;
-    margin: 3rem 0 0 0;
+}
+
+#title {
+  font-size: $home-title-font-size;
+  font-weight: 600;
+  color: $accent-color;
+  font-family: $primary-font-family;
+  margin: 3rem 0 0 0;
+}
+
+#subtitle {
+  font-family: $secondary-font-family;
+  color: #303134;
+  margin: 1rem 0 1rem 0;
+}
+
+#call-button {
+  margin-top: 1.25rem;
+  a {
+    font-family: $secondary-font-family;
+    font-size: calc(0.7em + 0.5vw);
   }
-  #subtitle {
-    font-family: 'Ledger', serif;
-    color: #303134;
-    margin: 1rem 0 1rem 0;
+}
+
+#banner-image {
+  margin: 1rem auto 0 auto;
+  width: 65%;
+
+  @media all and (max-width: $breakpoint-2) {
+    width: 90%;
   }
 
-  #call-button {
-    margin-top: 1.25rem;
-    a {
-      font-family: 'Ledger', serif;
-      font-size: calc(.7em + .5vw);
-    }
-  }
-
-  #banner-image {
-    margin: 1rem auto 0 auto;
-    width: 65%;
-    @media all and (max-width: $breakpoint-5) {
-      width: 90%;
-    }
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 }

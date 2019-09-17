@@ -1,4 +1,11 @@
+// Font sizes
 $header-font-size: calc(10px + 2vmin);
+$sidebar-font-size: calc(8px + 2vmin);
+$home-title-font-size: calc(1.5em + 3vw);
+
+// Font families
+$primary-font-family: 'Comfortaa', sans-serif;
+$secondary-font-family: 'Ledger', serif;
 
 // Dark theme:
 $background-dark: #282c34;
@@ -8,9 +15,20 @@ $accent-color: #48487f;
 $background-color: #fff;
 $button-text-color: #fff;
 
-$breakpoint-0: 1000px;
-$breakpoint-5: 715px;
-$breakpoint-1: 775px;
-$breakpoint-2: 550px;
-$breakpoint-3: 475px;
-$breakpoint-4: 380px;
+// Breakpoints
+$breakpoint-1: 1000px;
+$breakpoint-2: 775px;
+$breakpoint-3: 715px;
+$breakpoint-4: 550px;
+$breakpoint-5: 380px;
+
+// Hamburger properties
+$hamburger-color: #272727;
+$hamburger-button-width: 40px;
+$hamburger-line-width: $hamburger-button-width / (8/5);
+$hamburger-line-height: $hamburger-button-width / (80/6);
+$hamburger-after-translate: $hamburger-button-width / 5;
+$hamburger-before-translate: $hamburger-after-translate * -1;
+$hamburger-transform: $hamburger-line-width * -1;
+$hamburger-secondary-transform: $hamburger-button-width / (80/35);
+$hamburger-secondary-transform-negative: $hamburger-secondary-transform * -1;

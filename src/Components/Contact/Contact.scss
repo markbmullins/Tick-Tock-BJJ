@@ -1,33 +1,15 @@
-@import "../../mixins.scss";
+@import '../../mixins.scss';
 
 #contact-anchor {
   position: relative;
   top: -6.25em;
 }
 
-#contact-header {
-  margin-top: 5rem;
-  @media all and (max-width: $breakpoint-5) {
-    margin-top: 0rem;
-  }
-  height: 5%;
-  #accent-bar {
-    border: 1px solid black;
-    margin: 1em auto 1em;
-    width: 3.125em;
-  }
-
-  #title {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 400;
-  }
-}
-
-.map {
+#map {
   margin: 1.875em auto 1.875em auto;
   width: 90vw;
   height: 60vh;
-  @media all and (max-width: $breakpoint-5) {
+  @media all and (max-width: $breakpoint-2) {
     height: 40vh;
   }
 }

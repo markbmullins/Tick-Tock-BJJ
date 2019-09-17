@@ -1,23 +1,26 @@
-@import "../../mixins.scss";
+@import '../../mixins.scss';
 #menu {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 4.188rem; /* Stay at the top */
-    left: 0;
-    background-color: $background-color; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 3.75rem; /* Place content 60px from the top */
-    transition: 0.15s; /* 0.5 second transition effect to slide in the sidenav */
-    box-shadow: 0px 5px 5px grey;
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-      .nav-item {
-        margin-top: 1.75rem;
-        font-family: "Ledger", serif;
-        font-size: 1.313rem;
-      }
-    }
-  }
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 4.188rem; /* Stay at the top */
+  left: 0;
+  background-color: $background-color; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3.75rem; /* Place content 60px from the top */
+  transition: 0.15s; /* 0.5 second transition effect to slide in the sidenav */
+  box-shadow: 0px 5px 5px grey;
+}
+
+#menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  margin-top: 1.75rem;
+  font-family: $secondary-font-family;
+  text-align: center;
+  font-size: $sidebar-font-size;
+}

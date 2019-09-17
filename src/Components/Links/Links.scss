@@ -1,4 +1,4 @@
-@import "../../mixins.scss";
+@import '../../mixins.scss';
 
 .shadow-box {
   background: #f6f6f6;
@@ -11,20 +11,11 @@
   }
 }
 
-.title {
-  font-family: "Comfortaa", sans-serif;
-  font-weight: 400;
-  font-size: 1.25em;
-  text-align: center;
-  margin-bottom: calc(10px + 1vh);
-}
-
 #links-container {
   margin: auto;
-
   a {
-    font-family: "Ledger", serif;
-    color: #48487f;
+    font-family: $secondary-font-family;
+    color: $accent-color;
     margin: 2vw;
     font-size: calc(7px + 1.4vmin);
   }
@@ -32,9 +23,4 @@
     margin: 2vw;
     font-size: $header-font-size;
   }
-}
-.accent-bar {
-  border: 1px solid black;
-  margin: 1em auto 1em;
-  width: 3.125em;
 }

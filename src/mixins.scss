@@ -18,14 +18,14 @@
   color: $accent-color;
 }
 
-@mixin center {
+@mixin center-vertical {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
 @mixin button {
-  font-family: "Ledger", serif;
+  font-family: $secondary-font-family;
   background-color: $accent-color;
   border-radius: 0.2em;
   border: 1px solid $accent-color;

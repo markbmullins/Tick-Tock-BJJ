@@ -1,0 +1,15 @@
+@import '../../mixins.scss';
+
+#accent-bar {
+  border: 1px solid black;
+  margin: 1em auto 1em;
+  width: 3.125em;
+}
+
+#section-header-title {
+  font-family: $primary-font-family;
+  font-weight: 400;
+  font-size: 1.25em;
+  text-align: center;
+  margin-bottom: calc(10px + 1vh);
+}

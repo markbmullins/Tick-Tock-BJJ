@@ -7,10 +7,10 @@
   color: $button-text-color;
   width: calc(10em + 10vw);
   height: 3.5rem;
-  text-align: center;
   margin: auto;
+  text-align: center;
   
   #child {
-    @include center;
+    @include center-vertical;
   }
 }

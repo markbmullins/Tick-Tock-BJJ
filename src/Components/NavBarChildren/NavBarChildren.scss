@@ -1,69 +1,53 @@
-@import "../../mixins.scss";
-.flex-container {
-    align-items: center;
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
+@import '../../mixins.scss';
 
-    .left-side {
-      display: flex;
-      .hamburger {
-        margin-right: 1rem;
-        @media all and (min-width: 320px) {
-          margin: auto 0.75em auto 0;
-        }
-      }
+#navbar-children-container {
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
 
-      .page-title {
-        color: $accent-color;
-        font-family: "Comfortaa", sans-serif;
-      }
-    }
+#navbar-left {
+  display: flex;
+}
 
-    .right-side {
-      margin-left: auto;
-      .phone {
-        .phone-logo {
-          float: left;
-          img {
-            width: 1.063rem;
-            height: 1.063rem;
-            margin: auto;
-            margin-right: 10px;
-            margin-top: 3px;
-          }
-        }
-        .phone-link {
-          float: right;
-        }
-
-        color: $accent-color;
-        font-family: "Ledger", serif;
-        float: left;
-        margin: 0px 1.25rem;
-      }
-
-      .directions {
-        color: $accent-color;
-        font-family: "Ledger", serif;
-        float: right;
-        margin: 0px 1.25rem;
-        .directions-logo {
-          float: left;
-          img {
-            width: 1.063rem;
-            height: 1.063rem;
-            margin: auto;
-            margin-right: 0.625rem;
-            margin-top: 3px;
-          }
-        }
-        .directions-link {
-          float: right;
-        }
-      }
-      @media all and (max-width: 775px) {
-        display: none;
-      }
-    }
+#hamburger-container {
+  margin-right: 1rem;
+  @media all and (min-width: 320px) {
+    margin: auto 0.75em auto 0;
   }
+}
+
+#page-title {
+  color: $accent-color;
+  font-family: $primary-font-family;
+}
+
+#navbar-right {
+  margin-left: auto;
+  @media all and (max-width: 775px) {
+    display: none;
+  }
+}
+
+#phone-container {
+  color: $accent-color;
+  font-family: $secondary-font-family;
+  float: left;
+  margin: 0px 1.25rem;
+}
+
+#phone-link-container {
+  float: right;
+}
+
+#directions-container {
+  color: $accent-color;
+  font-family: $secondary-font-family;
+  float: right;
+  margin: 0px 1.25rem;
+}
+
+#directions-link-container {
+  float: right;
+}

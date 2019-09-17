@@ -1,50 +1,51 @@
 import React from 'react';
 import Hamburger from '../Hamburger/Hamburger';
+import NavBarIcon from '../NavBarIcon/NavBarIcon';
 import { mapSelector } from '../../helpers';
-import "./NavBarChildren.scss"
+import './NavBarChildren.scss';
 
-const NavBarChildren = ({pageTitle, toggleMenu, menuOpen}) => {
+const phoneIconImgSource =
+  process.env.PUBLIC_URL + '/assets/images/phone-icon.svg';
+const directionsIconImgSource =
+  process.env.PUBLIC_URL + '/assets/images/directions-icon.svg';
+
+const navBarRight = () => {
   return (
-    <div className="flex-container">
-      <div className="left-side">
-        <div className="hamburger">
-          <Hamburger isOpen={menuOpen} menuClicked={toggleMenu} />
+    <div id="navbar-right">
+      <div>
+        <div id="phone-container">
+          <div id="phone-link-container">
+            <NavBarIcon imgSource={phoneIconImgSource} />
+            <a href="tel:843-608-8727">Call Now</a>
+          </div>
         </div>
-        <div>
-          <h2 className="page-title">{pageTitle}</h2>
+        <div id="directions-container" onClick={() => mapSelector()}>
+          <NavBarIcon imgSource={directionsIconImgSource} />
+          <div id="directions-link-container">Get Directions</div>
         </div>
       </div>
+    </div>
+  );
+};
 
-      <div className="right-side">
-        <div>
-          <div className="phone">
-            <div className="phone-link">
-              <a href="tel:843-608-8727">
-                <div className="phone-logo">
-                  <img
-                    src={
-                      process.env.PUBLIC_URL + '/assets/images/phone-icon.svg'
-                    }
-                    alt="Call Tick-Tock Jiu-Jitsu"
-                  />
-                </div>
-                Call Now
-              </a>
-            </div>
-          </div>
-          <div className="directions" onClick={() => mapSelector()}>
-            <div className="directions-logo">
-              <img
-                src={
-                  process.env.PUBLIC_URL + '/assets/images/directions-icon.svg'
-                }
-                alt="Directions to Tick-Tock Jiu-Jitsu"
-              />
-            </div>
-            <div className="directions-link">Get Directions</div>
-          </div>
-        </div>
+const navBarLeft = (pageTitle, toggleMenu, menuOpen) => {
+  return (
+    <div id="navbar-left">
+      <div id="hamburger-container">
+        <Hamburger isOpen={menuOpen} menuClicked={toggleMenu} />
       </div>
+      <div>
+        <h2 id="page-title">{pageTitle}</h2>
+      </div>
+    </div>
+  );
+};
+
+const NavBarChildren = ({ pageTitle, toggleMenu, menuOpen }) => {
+  return (
+    <div id="navbar-children-container">
+      {navBarLeft(pageTitle, toggleMenu, menuOpen)}
+      {navBarRight()}
     </div>
   );
 };

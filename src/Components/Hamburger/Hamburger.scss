@@ -1,23 +1,15 @@
 @import "../../mixins.scss";
-$button-width: 40px;
-$line-width: $button-width / (8/5);
-$line-height: $button-width / (80/6);
-$after-translate: $button-width / 5;
-$before-translate: $after-translate * -1;
-$transform: $line-width * -1;
-$secondary-transform: $button-width / (80/35);
-$secondary-transform-negative: $secondary-transform * -1;
-$hamburger-color: #272727;
+
 @mixin transition {
   transition: all 0.5s ease-in-out;
 }
 
 @mixin hamburger-line {
-  width: $line-width;
-  height: $line-height;
+  width: $hamburger-line-width;
+  height: $hamburger-line-height;
   @include phone-below {
-    width: $line-width/1.5;
-    height: $line-height/1.5;
+    width: $hamburger-line-width/1.5;
+    height: $hamburger-line-height/1.5;
   }
   background: $hamburger-color;
   border-radius: 5px;
@@ -37,11 +29,11 @@ $hamburger-color: #272727;
 .menu-btn {
   position: relative;
   @include flex-center;
-  width: $button-width;
-  height: $button-width;
+  width: $hamburger-button-width;
+  height: $hamburger-button-width;
   @include phone-below {
-    width: $button-width/2;
-    height: $button-width/2;
+    width: $hamburger-button-width/2;
+    height: $hamburger-button-width/2;
   }
   cursor: pointer;
   @include transition;
@@ -59,39 +51,39 @@ $hamburger-color: #272727;
 }
 
 .menu-btn-burger::before {
-  transform: translateY($before-translate);
+  transform: translateY($hamburger-before-translate);
   @include phone-below {
-    transform: translateY($before-translate/2);
+    transform: translateY($hamburger-before-translate/2);
   }
 }
 
 .menu-btn-burger::after {
-  transform: translateY($after-translate);
+  transform: translateY($hamburger-after-translate);
   @include phone-below {
-    transform: translateY($after-translate/2);
+    transform: translateY($hamburger-after-translate/2);
   }
 }
 
 /* Animation */
 .menu-btn.open .menu-btn-burger {
-  transform: translateX($transform); // Middle line animation
+  transform: translateX($hamburger-transform); // Middle line animation
   @include phone-below {
-    transform: translateX($transform/2);
+    transform: translateX($hamburger-transform/2);
   }
   background: transparent;
   box-shadow: none;
 }
 
 .menu-btn.open .menu-btn-burger::before {
-  transform: rotate(45deg) translate($secondary-transform, $secondary-transform-negative);
+  transform: rotate(45deg) translate($hamburger-secondary-transform, $hamburger-secondary-transform-negative);
   @include phone-below {
-    transform: rotate(45deg) translate($secondary-transform/2, $secondary-transform-negative/2);
+    transform: rotate(45deg) translate($hamburger-secondary-transform/2, $hamburger-secondary-transform-negative/2);
   }
 }
 
 .menu-btn.open .menu-btn-burger::after {
-  transform: rotate(-45deg) translate($secondary-transform, $secondary-transform);
+  transform: rotate(-45deg) translate($hamburger-secondary-transform, $hamburger-secondary-transform);
   @include phone-below {
-    transform: rotate(-45deg) translate($secondary-transform/2, $secondary-transform/2);
+    transform: rotate(-45deg) translate($hamburger-secondary-transform/2, $hamburger-secondary-transform/2);
   }
 }
