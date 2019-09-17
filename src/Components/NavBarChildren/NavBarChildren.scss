@@ -1,5 +1,9 @@
 @import '../../mixins.scss';
 
+.float-right {
+  float: right;
+}
+
 #navbar-children-container {
   align-items: center;
   display: inline-flex;
@@ -7,8 +11,11 @@
   height: 100%;
 }
 
-#navbar-left {
-  display: flex;
+#navbar-right {
+  margin-left: auto;
+  @media all and (max-width: 775px) {
+    display: none;
+  }
 }
 
 #hamburger-container {
@@ -23,31 +30,22 @@
   font-family: $primary-font-family;
 }
 
-#navbar-right {
-  margin-left: auto;
-  @media all and (max-width: 775px) {
-    display: none;
-  }
+#navbar-left {
+  display: flex;
 }
 
-#phone-container {
+@mixin navbar-left-container {
   color: $accent-color;
   font-family: $secondary-font-family;
-  float: left;
+  
   margin: 0px 1.25rem;
 }
-
-#phone-link-container {
-  float: right;
+#phone-container {
+  @include navbar-left-container;
+  float: left;
 }
 
 #directions-container {
-  color: $accent-color;
-  font-family: $secondary-font-family;
-  float: right;
-  margin: 0px 1.25rem;
-}
-
-#directions-link-container {
+  @include navbar-left-container;
   float: right;
 }

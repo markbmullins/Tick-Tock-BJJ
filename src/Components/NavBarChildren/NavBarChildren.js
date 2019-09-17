@@ -14,14 +14,14 @@ const navBarRight = () => {
     <div id="navbar-right">
       <div>
         <div id="phone-container">
-          <div id="phone-link-container">
+          <div className="float-right">
             <NavBarIcon imgSource={phoneIconImgSource} />
             <a href={`tel:${PHONE_NUMBER}`}>Call Now</a>
           </div>
         </div>
         <div id="directions-container" onClick={() => mapSelector()}>
           <NavBarIcon imgSource={directionsIconImgSource} />
-          <div id="directions-link-container">Get Directions</div>
+          <div className="float-right">Get Directions</div>
         </div>
       </div>
     </div>
