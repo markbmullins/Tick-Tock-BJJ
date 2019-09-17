@@ -2,10 +2,8 @@ import React from 'react';
 import './Button.scss';
 
 const Button = props => {
-
-    const styles = {width:props.width, ...props.styles};
   return (
-    <div id="Button" style = {styles}>
+    <div id="Button" onClick={props.handleClick}>
       <div id="child">{props.children}</div>
     </div>
   );

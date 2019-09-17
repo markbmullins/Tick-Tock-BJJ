@@ -1,12 +1,12 @@
 import React from 'react';
 import './Information.scss';
-import DirectionButton from '../DirectionButton/DirectionButton';
 import Button from '../Button/Button';
+import { mapSelector } from '../../helpers';
 
 const contact = (
   <div className="info-column">
     <div className="bold">Contact</div>
-    <div id="phone-button">
+    <div className="info-button">
       <Button width="19 vw">
         <a className="full-height-width" href="tel:843-608-8727">
           Call Now
@@ -20,8 +20,11 @@ const contact = (
 const directions = (
   <div className="info-column">
     <div className="bold">Address</div>
-    <DirectionButton />
-
+    <div className="info-button">
+      <Button width="19 vw" handleClick={mapSelector}>
+        <div id="button-text">Get Directions</div>
+      </Button>
+    </div>
     <div className="nowrap">
       <div>7671 Northwoods Blvd Unit H</div>
       <div>North Charleston, SC 29406</div>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './App.scss';
 import Contact from '../Contact/Contact';
 import Home from '../Home/Home';
 import Navbar from '../Navbar/Navbar';
 import Links from '../Links/Links';
+import './App.scss';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ function App() {
         toggleMenu={toggleMenu}
         menuOpen={menuOpen}
       />
-      <div className="content">
+      <div id="content">
         <Home id="Home" />
         <Links id="Links" />
         <Contact id="Contact" />
