@@ -11,7 +11,7 @@ const Contact = () => {
     <Section>
         <div id="contact-anchor" />
         <SectionHeader name="Contact Us"/>
-        <div id="map">
+        <div id="contact-map">
           <iframe
             title="map"
             src={url}

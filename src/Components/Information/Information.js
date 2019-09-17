@@ -2,18 +2,19 @@ import React from 'react';
 import './Information.scss';
 import Button from '../Button/Button';
 import { mapSelector } from '../../helpers';
+import { PHONE_NUMBER } from '../../vars';
 
 const contact = (
   <div className="info-column">
     <div className="bold">Contact</div>
     <div className="info-button">
       <Button width="19 vw">
-        <a className="full-height-width" href="tel:843-608-8727">
+        <a className="full-height-width" href={`tel:${PHONE_NUMBER}`}>
           Call Now
         </a>
       </Button>
     </div>
-    <div>(843) 608-8727</div>
+    <div>{PHONE_NUMBER}</div>
   </div>
 );
 

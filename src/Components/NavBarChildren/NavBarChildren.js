@@ -3,11 +3,11 @@ import Hamburger from '../Hamburger/Hamburger';
 import NavBarIcon from '../NavBarIcon/NavBarIcon';
 import { mapSelector } from '../../helpers';
 import './NavBarChildren.scss';
+import { PHONE_NUMBER } from '../../vars';
 
-const phoneIconImgSource =
-  process.env.PUBLIC_URL + '/assets/images/phone-icon.svg';
-const directionsIconImgSource =
-  process.env.PUBLIC_URL + '/assets/images/directions-icon.svg';
+const pub = process.env.PUBLIC_URL;
+const phoneIconImgSource = pub + '/assets/images/phone-icon.svg';
+const directionsIconImgSource = pub + '/assets/images/directions-icon.svg';
 
 const navBarRight = () => {
   return (
@@ -16,7 +16,7 @@ const navBarRight = () => {
         <div id="phone-container">
           <div id="phone-link-container">
             <NavBarIcon imgSource={phoneIconImgSource} />
-            <a href="tel:843-608-8727">Call Now</a>
+            <a href={`tel:${PHONE_NUMBER}`}>Call Now</a>
           </div>
         </div>
         <div id="directions-container" onClick={() => mapSelector()}>

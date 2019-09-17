@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.scss';
 import { scrollIntoView } from '../../helpers';
-import { Anchors } from '../../vars';
+import { ANCHORS } from '../../vars';
 
 const Sidebar = ({ toggleMenu }) => {
   const sideBarItemClicked = anchor => {
@@ -14,13 +14,13 @@ const Sidebar = ({ toggleMenu }) => {
       <div id="menu-container">
         <div
           className="nav-item"
-          onClick={() => sideBarItemClicked(Anchors.HOME)}
+          onClick={() => sideBarItemClicked(ANCHORS.HOME)}
         >
           Home
         </div>
         <div
           className="nav-item"
-          onClick={() => sideBarItemClicked(Anchors.CONTACT)}
+          onClick={() => sideBarItemClicked(ANCHORS.CONTACT)}
         >
           Contact
         </div>

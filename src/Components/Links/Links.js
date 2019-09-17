@@ -2,26 +2,34 @@ import React from 'react';
 import './Links.scss';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
+const freeTrialLink = (
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://ticktockbjj.sites.zenplanner.com/freeTrial.cfm"
+  >
+    Sign up for a Free Class
+  </a>
+);
+
+const memberLink = (
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://ticktockbjj.sites.zenplanner.com/login.cfm?message=RequireLogin"
+  >
+    Sign In Here
+  </a>
+);
+
 const Links = () => {
   return (
-    <div id="links-box" className="shadow-box">
+    <div className="shadow-box">
       <SectionHeader name="Links" />
       <div id="links-container">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://ticktockbjj.sites.zenplanner.com/freeTrial.cfm"
-        >
-          Sign up for a Free Class
-        </a>
+        {freeTrialLink}
         <div>Already a member?</div>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://ticktockbjj.sites.zenplanner.com/login.cfm?message=RequireLogin"
-        >
-          Sign In Here
-        </a>
+        {memberLink}
       </div>
     </div>
   );
