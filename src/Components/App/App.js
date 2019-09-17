@@ -1,26 +1,38 @@
-import React from "react";
-import "./App.scss";
+import React, { useState } from 'react';
+import './App.scss';
 
 // import About from "../About/About";
-import Contact from "../Contact/Contact";
+import Contact from '../Contact/Contact';
 // import Gallery from "../Gallery/Gallery";
-import Home from "../Home/Home";
+import Home from '../Home/Home';
 // import Testimonials from "../Testimonials/Testimonials";
 // import Updates from "../Updates/Updates";
-import Navbar from "../Navbar/Navbar";
-import Links from "../Links/Links";
+import Navbar from '../Navbar/Navbar';
+import Links from '../Links/Links';
+
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    if (menuOpen) {
+      document.getElementById('menu').style.width = '0px';
+      setMenuOpen(false);
+    } else {
+      document.getElementById('menu').style.width = '20.313em';
+      setMenuOpen(true);
+    }
+  };
+
   return (
     <div className="App">
       <div id="top-anchor" />
-      <Navbar pageTitle="Tick-Tock Jiu-Jitsu" />
+      <Navbar
+        pageTitle="Tick-Tock Jiu-Jitsu"
+        toggleMenu={toggleMenu}
+        menuOpen={menuOpen}
+     />
       <div className="content">
         <Home id="Home" />
-        {/* <Updates id="Updates" /> */}
-        {/* <Testimonials id="Testimonials" /> */}
-        {/* <About id="About" /> */}
-        {/* <Gallery id="Gallery" /> */}
         <Links id="Links" />
         <Contact id="Contact" />
       </div>
