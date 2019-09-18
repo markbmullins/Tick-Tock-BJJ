@@ -1,4 +1,4 @@
-@import '../../mixins.scss';
+@import "../../mixins.scss";
 
 #button {
   background-color: $accent-color;
@@ -7,7 +7,6 @@
   color: $button-text-color-light;
   width: calc(10em + 10vw);
   height: 3.5rem;
-  margin: auto;
   text-align: center;
 
   #button-child {
