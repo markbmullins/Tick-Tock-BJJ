@@ -1,22 +1,22 @@
-import React from 'react';
-import NavBarIcon from '../NavBarIcon/NavBarIcon';
-import './BottomRibbon.scss';
-import { PHONE_NUMBER, PHONE_ICON, DIRECTIONS_ICON } from '../../vars';
+import React from "react";
+import NavBarIcon from "../NavBarIcon/NavBarIcon";
+import "./BottomRibbon.scss";
+import { PHONE_NUMBER, PHONE_ICON, DIRECTIONS_ICON } from "../../vars";
 
 const ribbonItems = [
   {
     icon: <NavBarIcon imgSource={PHONE_ICON} />,
-    text: 'Call Now'
+    text: "Call Now"
   },
   {
     icon: <NavBarIcon imgSource={DIRECTIONS_ICON} />,
-    text: 'Get Directions'
+    text: "Get Directions"
   }
 ];
 
 const BottomRibbon = () => {
   return (
-    <div id="bottom-ribbon">
+    <div id="bottom-ribbon" className="flex-center">
       {ribbonItems.map(item => {
         return (
           <div>
