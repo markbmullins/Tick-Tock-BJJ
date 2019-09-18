@@ -1,6 +1,6 @@
 @import '../../mixins.scss';
 
-#info {
+#info-section {
   display: flex;
   justify-content: center;
   @media all and (max-width: $breakpoint-1) {

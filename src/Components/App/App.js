@@ -22,7 +22,7 @@ function App() {
         toggleMenu={toggleMenu}
         menuOpen={menuOpen}
       />
-      <div id="content">
+      <div id="page-content">
         <Home id="Home" />
         <Links id="Links" />
         <Contact id="Contact" />

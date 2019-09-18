@@ -7,28 +7,28 @@ import { PHONE_NUMBER, MULTI_LINE_ADDRESS, HOURS } from '../../vars';
 const buttonWidth = '19 vw';
 
 const contact = (
-  <div className="info-column">
-    <div className="bold">Contact</div>
-    <div className="info-button">
+  <div id="contact-column" className="info-column">
+    <div id="contact-column-heading" className="bold">Contact</div>
+    <div id="contact-column-phone-link" className="info-button">
       <Button width={buttonWidth}>
         <a className="full-height-width" href={`tel:${PHONE_NUMBER}`}>
           Call Now
         </a>
       </Button>
     </div>
-    <div>{PHONE_NUMBER}</div>
+    <div id="contact-column-phone-text">{PHONE_NUMBER}</div>
   </div>
 );
 
 const directions = (
-  <div className="info-column">
-    <div className="bold">Address</div>
-    <div className="info-button">
+  <div id="directions-column" className="info-column">
+    <div id="directions-column-heading" className="bold">Address</div>
+    <div id="directions-column-map-link" className="info-button">
       <Button width={buttonWidth} handleClick={mapSelector}>
         <div id="button-text">Get Directions</div>
       </Button>
     </div>
-    <div className="nowrap">
+    <div id="directions-column-address-text" className="nowrap">
       {MULTI_LINE_ADDRESS.map(line => (
         <div>{line}</div>
       ))}
@@ -38,24 +38,26 @@ const directions = (
 
 const buildDay = (day, hours) => {
   return (
-    <div className="day">
-      <span className="day-name">{day}</span>
+    <div id={`${day}-line`}className="day">
+      <span id={day} className="day-name">{day}</span>
       {hours.map(hour => {
-        return <span>{hour}</span>;
+        return <span id={`${day}-hours`}>{hour}</span>;
       })}
     </div>
   );
 };
 
 const buildDays = () => {
+  let days = [];
   for (var day in HOURS) {
-    buildDay(day, HOURS[day]);
+    days.push(buildDay(day, HOURS[day]));
   }
+  return days;
 };
 
 const hours = (
-  <div className="info-column">
-    <div className="bold">Business Hours</div>
+  <div id="hours-column" className="info-column">
+    <div id="hours-column-hours" className="bold">Business Hours</div>
     <div>
       <div id="days-container">{buildDays()}</div>
     </div>
@@ -64,7 +66,7 @@ const hours = (
 
 const Info = () => {
   return (
-    <div id="info">
+    <div id="info-section">
       {contact}
       {directions}
       {hours}

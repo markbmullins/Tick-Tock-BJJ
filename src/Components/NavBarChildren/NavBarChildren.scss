@@ -25,7 +25,7 @@
   }
 }
 
-#page-title {
+#navbar-page-title {
   color: $accent-color;
   font-family: $primary-font-family;
 }
@@ -45,7 +45,7 @@
   float: left;
 }
 
-#directions-container {
+#directions-link {
   @include navbar-left-container;
   float: right;
 }

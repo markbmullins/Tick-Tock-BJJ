@@ -9,15 +9,15 @@ const Sidebar = ({ toggleMenu }) => {
     scrollIntoView(anchor);
   };
   return (
-    <div id="menu">
-      <div id="menu-container">
-        <div
+    <div id="sidebar">
+      <div id="sidebar-container">
+        <div id="sidebar-item-home"
           className="nav-item"
           onClick={() => sideBarItemClicked(ANCHORS.HOME)}
         >
           Home
         </div>
-        <div
+        <div id="sidebar-item-contact"
           className="nav-item"
           onClick={() => sideBarItemClicked(ANCHORS.CONTACT)}
         >

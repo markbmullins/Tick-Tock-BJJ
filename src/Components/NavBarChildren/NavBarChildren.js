@@ -12,12 +12,16 @@ const navBarRight = () => {
         <div id="phone-container">
           <div className="float-right">
             <NavBarIcon imgSource={PHONE_ICON} />
-            <a href={`tel:${PHONE_NUMBER}`}>Call Now</a>
+            <a id="phone-link" href={`tel:${PHONE_NUMBER}`}>
+              Call Now
+            </a>
           </div>
         </div>
-        <div id="directions-container" onClick={() => mapSelector()}>
+        <div id="directions-link" onClick={() => mapSelector()}>
           <NavBarIcon imgSource={DIRECTIONS_ICON} />
-          <div className="float-right">Get Directions</div>
+          <div id="directions-text" className="float-right">
+            Get Directions
+          </div>
         </div>
       </div>
     </div>
@@ -31,7 +35,7 @@ const navBarLeft = (pageTitle, toggleMenu, menuOpen) => {
         <Hamburger isOpen={menuOpen} menuClicked={toggleMenu} />
       </div>
       <div>
-        <h2 id="page-title">{pageTitle}</h2>
+        <h2 id="navbar-page-title">{pageTitle}</h2>
       </div>
     </div>
   );

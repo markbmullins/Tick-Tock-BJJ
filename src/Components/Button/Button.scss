@@ -1,6 +1,6 @@
 @import '../../mixins.scss';
 
-#Button {
+#button {
   background-color: $accent-color;
   border-radius: 0.2em;
   border: 1px solid $accent-color;
@@ -10,7 +10,7 @@
   margin: auto;
   text-align: center;
 
-  #child {
+  #button-child {
     @include center-vertical;
   }
 }

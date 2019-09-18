@@ -3,7 +3,7 @@ import './SectionHeader.scss';
 
 const SectionHeader = ({ name }) => {
   return (
-    <div>
+    <div id={`section-header-${name}`}>
       <hr id="accent-bar" />
       <div id="section-header-title">{name}</div>
     </div>
