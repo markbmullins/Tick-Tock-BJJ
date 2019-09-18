@@ -21,18 +21,26 @@ const navBarLeft = (pageTitle, toggleMenu, menuOpen) => {
 const navBarRight = () => {
   return (
     <div id="navbar-right">
-        <div id="phone-container" className="flex-center">
-          <NavBarIcon imgSource={PHONE_ICON} />
-          <a id="phone-link" href={`tel:${PHONE_NUMBER}`}>
-            Call Now
-          </a>
+      <div id="phone-container" className="flex-center">
+        <NavBarIcon imgSource={PHONE_ICON} />
+        <a
+          className="navbar-right-text"
+          id="phone-link"
+          href={`tel:${PHONE_NUMBER}`}
+        >
+          Call Now
+        </a>
+      </div>
+      <div
+        id="directions-link"
+        onClick={() => mapSelector()}
+        className="flex-center"
+      >
+        <NavBarIcon imgSource={DIRECTIONS_ICON} />
+        <div id="directions-text" className="navbar-right-text">
+          Get Directions
         </div>
-        <div id="directions-link" onClick={() => mapSelector()} className="flex-center">
-          <NavBarIcon imgSource={DIRECTIONS_ICON} />
-          <div id="directions-text" >
-            Get Directions
-          </div>
-        </div>
+      </div>
     </div>
   );
 };

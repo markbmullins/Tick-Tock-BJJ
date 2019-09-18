@@ -34,9 +34,6 @@
   margin: 0px 1.25rem;
   height: 100%;
   font-size: $navbar-item-font-size;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
 }
 
 #phone-container {
@@ -49,12 +46,6 @@
   float: right;
 }
 
-#directions-text {
-  margin-left: .6rem;
+.navbar-right-text {
+  margin-left: 0.6rem;
 }
-
-#phone-link{
-  margin-left: .6rem;
-}
-
-
