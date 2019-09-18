@@ -2,17 +2,18 @@ import React from 'react';
 import Section from '../Section/Section';
 import Button from '../Button/Button';
 import './Home.scss';
-import { PHONE_NUMBER } from '../../vars';
+import {
+  PHONE_NUMBER,
+  BANNER_IMAGE,
+  PAGE_TITLE,
+  SUBTITLES
+} from '../../vars';
 
-const pub = process.env.PUBLIC_URL;
-const bannerImgSrc = pub + '/assets/images/ttjj-banner-image.jpg';
-
-const title = <div id="home-title">Tick-Tock Jiu-Jitsu</div>;
+const title = <div id="home-title">{PAGE_TITLE}</div>;
 
 const subtitle = (
   <div id="home-subtitle">
-    <div>Martial Arts School in North Charleston</div>
-    <div>Opening at 10:00 AM</div>
+    {SUBTITLES.map(sub => <div>{sub}</div>)}
   </div>
 );
 
@@ -26,7 +27,7 @@ const callButton = (
 
 const bannerImage = (
   <div id="home-banner-image">
-    <img src={bannerImgSrc} alt="Tick-Tock Jiu-Jitsu" />
+    <img src={BANNER_IMAGE} alt={PAGE_TITLE} />
   </div>
 );
 

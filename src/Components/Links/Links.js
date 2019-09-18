@@ -1,23 +1,16 @@
 import React from 'react';
 import './Links.scss';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import { FREE_TRIAL_LINK, FREE_TRIAL_TEXT, MEMBER_LINK } from '../../vars';
 
 const freeTrialLink = (
-  <a
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://ticktockbjj.sites.zenplanner.com/freeTrial.cfm"
-  >
-    Sign up for a Free Class
+  <a target="_blank" rel="noopener noreferrer" href={FREE_TRIAL_LINK}>
+    {FREE_TRIAL_TEXT}
   </a>
 );
 
 const memberLink = (
-  <a
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://ticktockbjj.sites.zenplanner.com/login.cfm?message=RequireLogin"
-  >
+  <a target="_blank" rel="noopener noreferrer" href={MEMBER_LINK}>
     Sign In Here
   </a>
 );

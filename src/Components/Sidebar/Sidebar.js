@@ -8,7 +8,6 @@ const Sidebar = ({ toggleMenu }) => {
     toggleMenu();
     scrollIntoView(anchor);
   };
-
   return (
     <div id="menu">
       <div id="menu-container">

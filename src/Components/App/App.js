@@ -4,15 +4,13 @@ import Home from '../Home/Home';
 import Navbar from '../Navbar/Navbar';
 import Links from '../Links/Links';
 import './App.scss';
+import { openSidebar, closeSidebar } from '../../helpers';
+import { PAGE_TITLE } from '../../vars';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
-    if (menuOpen) {
-      document.getElementById('menu').style.width = '0px';
-    } else {
-      document.getElementById('menu').style.width = '20.313em';
-    }
+    menuOpen ? closeSidebar() : openSidebar();
     setMenuOpen(!menuOpen);
   };
 
@@ -20,7 +18,7 @@ function App() {
     <div className="App">
       <div id="top-anchor" />
       <Navbar
-        pageTitle="Tick-Tock Jiu-Jitsu"
+        pageTitle={PAGE_TITLE}
         toggleMenu={toggleMenu}
         menuOpen={menuOpen}
       />

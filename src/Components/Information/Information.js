@@ -2,13 +2,15 @@ import React from 'react';
 import './Information.scss';
 import Button from '../Button/Button';
 import { mapSelector } from '../../helpers';
-import { PHONE_NUMBER } from '../../vars';
+import { PHONE_NUMBER, MULTI_LINE_ADDRESS, HOURS } from '../../vars';
+
+const buttonWidth = '19 vw';
 
 const contact = (
   <div className="info-column">
     <div className="bold">Contact</div>
     <div className="info-button">
-      <Button width="19 vw">
+      <Button width={buttonWidth}>
         <a className="full-height-width" href={`tel:${PHONE_NUMBER}`}>
           Call Now
         </a>
@@ -22,14 +24,14 @@ const directions = (
   <div className="info-column">
     <div className="bold">Address</div>
     <div className="info-button">
-      <Button width="19 vw" handleClick={mapSelector}>
+      <Button width={buttonWidth} handleClick={mapSelector}>
         <div id="button-text">Get Directions</div>
       </Button>
     </div>
     <div className="nowrap">
-      <div>7671 Northwoods Blvd Unit H</div>
-      <div>North Charleston, SC 29406</div>
-      <div>United States</div>
+      {MULTI_LINE_ADDRESS.map(line => (
+        <div>{line}</div>
+      ))}
     </div>
   </div>
 );
@@ -45,19 +47,17 @@ const buildDay = (day, hours) => {
   );
 };
 
+const buildDays = () => {
+  for (var day in HOURS) {
+    buildDay(day, HOURS[day]);
+  }
+};
+
 const hours = (
   <div className="info-column">
     <div className="bold">Business Hours</div>
     <div>
-      <div id="days-container">
-        {buildDay('Mon: ', ['10:00 AM – 1:00 PM, ', '6:00 – 8:30 PM'])}
-        {buildDay('Tue: ', ['10:00 AM – 1:00 PM, ', '5:00 – 8:00 PM'])}
-        {buildDay('Wed: ', ['10:00 AM – 1:00 PM, ', '5:00 – 8:00 PM'])}
-        {buildDay('Thu: ', ['10:00 AM – 1:00 PM, ', '5:00 – 8:00 PM'])}
-        {buildDay('Fri: ', ['10:00 AM – 12:00 PM, ', '6:00 – 8:00 PM'])}
-        {buildDay('Sat: ', ['10:00 AM – 1:00 PM '])}
-        {buildDay('Sun: ', ['10:00 AM – 11:00 AM '])}
-      </div>
+      <div id="days-container">{buildDays()}</div>
     </div>
   </div>
 );
