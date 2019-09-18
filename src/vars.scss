@@ -1,6 +1,7 @@
 // Font sizes
 $header-font-size: calc(10px + 2vmin);
 $sidebar-font-size: calc(8px + 2vmin);
+$navbar-item-font-size: calc(7px + 1.5vmin);
 $home-title-font-size: calc(1.5em + 3vw);
 
 // Font families
@@ -24,7 +25,7 @@ $breakpoint-5: 380px;
 
 // Hamburger properties
 $hamburger-color: #272727;
-$hamburger-button-width: 40px;
+$hamburger-button-width: 30px;
 $hamburger-line-width: $hamburger-button-width / (8/5);
 $hamburger-line-height: $hamburger-button-width / (80/6);
 $hamburger-after-translate: $hamburger-button-width / 5;

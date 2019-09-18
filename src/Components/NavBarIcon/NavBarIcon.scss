@@ -1,10 +1,12 @@
 .navbar-icon {
-    float: left;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
     img {
-      width: 1.063rem;
-      height: 1.063rem;
-      margin: auto;
-      margin-right: 0.625rem;
-      margin-top: 3px;
+      flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
     }
-  }
+}
+

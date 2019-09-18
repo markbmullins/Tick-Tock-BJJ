@@ -1,0 +1,18 @@
+@import '../../mixins.scss';
+
+#bottom-ribbon {
+  display: none;
+  @include phone-below {
+    display: flex;
+    height: 5.063rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 4.125rem;
+    background-color: $background-color-light;
+    position: fixed;
+    box-shadow: 0 0 5px grey;
+    z-index: 2;
+    bottom: 0;
+    border: 1px solid red;
+  }
+}

@@ -3,6 +3,7 @@ import Contact from '../Contact/Contact';
 import Home from '../Home/Home';
 import Navbar from '../Navbar/Navbar';
 import Links from '../Links/Links';
+import BottomRobbon from "../BottomRibbon/BottomRibbon";
 import './App.scss';
 import { openSidebar, closeSidebar } from '../../helpers';
 import { PAGE_TITLE } from '../../vars';
@@ -27,6 +28,7 @@ function App() {
         <Links id="Links" />
         <Contact id="Contact" />
       </div>
+      <BottomRobbon />
     </div>
   );
 }

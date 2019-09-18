@@ -22,9 +22,9 @@ export const scrollIntoView = id => {
 };
 
 export const openSidebar = () => {
-  document.getElementById('menu').style.width = '20.313em';
+  document.getElementById('sidebar').style.width = '20.313em';
 };
 
 export const closeSidebar = () => {
-  document.getElementById('menu').style.width = '0px';
+  document.getElementById('sidebar').style.width = '0px';
 };
