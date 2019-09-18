@@ -1,4 +1,4 @@
-@import '../../mixins.scss';
+@import "../../mixins.scss";
 
 #info-section {
   display: flex;
@@ -6,6 +6,9 @@
   @media all and (max-width: $breakpoint-1) {
     flex-direction: column;
     width: 17em;
+  }
+  @include phone-below {
+    margin-bottom: 5.063rem;
   }
 }
 
