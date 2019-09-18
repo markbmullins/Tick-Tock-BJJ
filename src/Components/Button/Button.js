@@ -1,11 +1,13 @@
 import React from 'react';
 import './Button.scss';
 
-const Button = props => {
+const Button = ({href, customId, handleClick, children}) => {
   return (
-    <div id="button" onClick={props.handleClick}>
-      <div id="button-child">{props.children}</div>
+    <a id={customId} href={href}>
+    <div id="button" onClick={handleClick}>
+      <div id="button-child">{children}</div>
     </div>
+    </a>
   );
 };
 

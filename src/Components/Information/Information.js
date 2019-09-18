@@ -8,12 +8,16 @@ const buttonWidth = '19 vw';
 
 const contact = (
   <div id="contact-column" className="info-column">
-    <div id="contact-column-heading" className="bold">Contact</div>
+    <div id="contact-column-heading" className="bold">
+      Contact
+    </div>
     <div id="contact-column-phone-link" className="info-button">
-      <Button width={buttonWidth}>
-        <a className="full-height-width" href={`tel:${PHONE_NUMBER}`}>
-          Call Now
-        </a>
+      <Button
+        width={buttonWidth}
+        href={`tel:${PHONE_NUMBER}`}
+        customId="contact-call-button"
+      >
+        Call Now
       </Button>
     </div>
     <div id="contact-column-phone-text">{PHONE_NUMBER}</div>
@@ -22,7 +26,9 @@ const contact = (
 
 const directions = (
   <div id="directions-column" className="info-column">
-    <div id="directions-column-heading" className="bold">Address</div>
+    <div id="directions-column-heading" className="bold">
+      Address
+    </div>
     <div id="directions-column-map-link" className="info-button">
       <Button width={buttonWidth} handleClick={mapSelector}>
         <div id="button-text">Get Directions</div>
@@ -38,8 +44,10 @@ const directions = (
 
 const buildDay = (day, hours) => {
   return (
-    <div id={`${day}-line`}className="day">
-      <span id={day} className="day-name">{day}</span>
+    <div id={`${day}-line`} className="day">
+      <span id={day} className="day-name">
+        {day}
+      </span>
       {hours.map(hour => {
         return <span id={`${day}-hours`}>{hour}</span>;
       })}
@@ -57,7 +65,9 @@ const buildDays = () => {
 
 const hours = (
   <div id="hours-column" className="info-column">
-    <div id="hours-column-hours" className="bold">Business Hours</div>
+    <div id="hours-column-hours" className="bold">
+      Business Hours
+    </div>
     <div>
       <div id="days-container">{buildDays()}</div>
     </div>

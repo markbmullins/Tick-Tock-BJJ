@@ -19,8 +19,8 @@ const subtitle = (
 
 const callButton = (
   <div id="home-call-button">
-    <Button>
-      <a id="home-call-button-link" href={`tel:${PHONE_NUMBER}`}>CALL {PHONE_NUMBER}</a>
+    <Button href={`tel:${PHONE_NUMBER}`} customId="home-call-button-link">
+      CALL {PHONE_NUMBER}
     </Button>
   </div>
 );
