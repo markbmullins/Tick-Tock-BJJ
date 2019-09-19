@@ -7,6 +7,10 @@ A react website for Tick-Tock Jiu-Jitsu created using [Create React App](https:/
 
 The icons are google SVG icons with a fill color. To change this color, open the SVG in an editor and change the fill property at `<svg style="fill: #48487f"`.
 
+## Live Demo
+
+This project is currently hosted on Heroku [here] (http://ticktockjiujitsu.herokuapp.com).
+
 ## Screenshots  
 
 ### Desktop verson: 
