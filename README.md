@@ -1,14 +1,20 @@
 
-# Tick-Tock Jiu-Jitsu
+# Tick-Tock Jiu-Jitsu  
+
 A react website for Tick-Tock Jiu-Jitsu created using [Create React App](https://github.com/facebook/create-react-app). My goal with this project was to build React components that were as generic as possible. I tried to keep value specific to Tick-Tock BJJ in [vars.js](/src/vars.js). As such, you can clone this repo and add your own values/images and use this project as a template.
 
-## Screenshots
+## Screenshots  
+
+Desktop verson: 
+
+![Tick-Tock BJJ](/screenshots/Screenshot_5.png)
+![Tick-Tock BJJ](/screenshots/Screenshot_4.png)
+
+Mobile version:
 
 ![Tick-Tock BJJ](/screenshots/Screenshot_1.png)
 ![Tick-Tock BJJ](/screenshots/Screenshot_2.png)
 ![Tick-Tock BJJ](/screenshots/Screenshot_3.png)
-![Tick-Tock BJJ](/screenshots/Screenshot_4.png)
-![Tick-Tock BJJ](/screenshots/Screenshot_5.png)
 
 ## Create React App Documentation
 
