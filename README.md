@@ -4,11 +4,11 @@ A react website for Tick-Tock Jiu-Jitsu created using [Create React App](https:/
 
 ## Screenshots
 
-[](/screenshots/Screenshot_1.png)
-[](/screenshots/Screenshot_2.png)
-[](/screenshots/Screenshot_3.png)
-[](/screenshots/Screenshot_4.png)
-[](/screenshots/Screenshot_5.png)
+![Tick-Tock BJJ](/screenshots/Screenshot_1.png)
+![Tick-Tock BJJ](/screenshots/Screenshot_2.png)
+![Tick-Tock BJJ](/screenshots/Screenshot_3.png)
+![Tick-Tock BJJ](/screenshots/Screenshot_4.png)
+![Tick-Tock BJJ](/screenshots/Screenshot_5.png)
 
 ## Create React App Documentation
 
