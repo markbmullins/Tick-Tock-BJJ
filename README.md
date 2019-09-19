@@ -9,7 +9,7 @@ The icons are google SVG icons with a fill color. To change this color, open the
 
 ## Live Demo
 
-This project is currently hosted on Heroku [here] (http://ticktockjiujitsu.herokuapp.com).
+This project is currently hosted on Heroku [here](http://ticktockjiujitsu.herokuapp.com).
 
 ## Screenshots  
 
