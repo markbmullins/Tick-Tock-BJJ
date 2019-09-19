@@ -35,8 +35,8 @@ const directions = (
       </Button>
     </div>
     <div id="directions-column-address-text" className="nowrap">
-      {MULTI_LINE_ADDRESS.map(line => (
-        <div>{line}</div>
+      {MULTI_LINE_ADDRESS.map((line, index) => (
+        <div key={line + index}>{line}</div>
       ))}
     </div>
   </div>
@@ -44,12 +44,16 @@ const directions = (
 
 const buildDay = (day, hours) => {
   return (
-    <div id={`${day}-line`} className="day">
+    <div key={day} id={`${day}-line`} className="day">
       <span id={day} className="day-name">
         {day}
       </span>
-      {hours.map(hour => {
-        return <span id={`${day}-hours`}>{hour}</span>;
+      {hours.map((hour, index) => {
+        return (
+          <span key={hour + index} id={`${day}-hours`}>
+            {hour}
+          </span>
+        );
       })}
     </div>
   );
