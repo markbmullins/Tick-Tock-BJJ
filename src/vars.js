@@ -24,15 +24,14 @@ export const DIRECTIONS_ICON = pub + '/assets/images/directions-icon.svg';
 export const BANNER_IMAGE = pub + '/assets/images/ttjj-banner-image.jpg';
 
 export const SUBTITLES = [
-  'Martial Arts School in North Charleston',
-  'Opening at 10:00 AM'
+  'Martial Arts School in North Charleston'
 ];
 
 export const HOURS = {
-  'Mon: ': ['10:00 AM – 1:00 PM, ', '6:00 – 8:30 PM'],
-  'Tue: ': ['10:00 AM – 1:00 PM, ', '5:00 – 8:00 PM'],
-  'Wed: ': ['10:00 AM – 1:00 PM, ', '5:00 – 8:00 PM'],
-  'Thu: ': ['10:00 AM – 1:00 PM, ', '5:00 – 8:00 PM'],
+  'Mon: ': ['10:00 AM – 1:00 PM,', '6:00 – 8:30 PM'],
+  'Tue: ': ['10:00 AM – 1:00 PM,', '5:00 – 8:00 PM'],
+  'Wed: ': ['10:00 AM – 1:00 PM,', '5:00 – 8:00 PM'],
+  'Thu: ': ['10:00 AM – 1:00 PM,', '5:00 – 8:00 PM'],
   'Fri: ': ['10:00 AM – 12:00 PM, ', '6:00 – 8:00 PM'],
   'Sat: ': ['10:00 AM – 1:00 PM '],
   'Sun: ': ['10:00 AM – 11:00 AM ']
